@@ -1,5 +1,79 @@
 # CHANGELOG
 
+## [4.0.0](https://github.com/uncenter/ctp-mdBook/compare/v3.1.0...v4.0.0) (2024-11-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* deprecate rust plugin & update sass files ([#112](https://github.com/uncenter/ctp-mdBook/issues/112))
+* support mdbook version `0.4.35`
+
+### Features
+
+* add deprecation notice ([#109](https://github.com/uncenter/ctp-mdBook/issues/109)) ([d023fd5](https://github.com/uncenter/ctp-mdBook/commit/d023fd52c6d31fe6236339afe1fd73d76d7f83e9))
+* add support for `lambdalisue/rs-mdbook-alerts` ([#135](https://github.com/uncenter/ctp-mdBook/issues/135)) ([cd3ca47](https://github.com/uncenter/ctp-mdBook/commit/cd3ca47e761df31288641a5134879b8e76af827f))
+* **cli:** add "--force" flag to install command ([28f9d0f](https://github.com/uncenter/ctp-mdBook/commit/28f9d0f02aea41c7278659fb22ba9db5bbf02b5d))
+* **cli:** add shell completion ([a9a79c6](https://github.com/uncenter/ctp-mdBook/commit/a9a79c6f5441f1f62ae4658d7d1aaf9f79b3b9d3))
+* **cli:** detect differences in major version ([8956c61](https://github.com/uncenter/ctp-mdBook/commit/8956c61a727b0408be202c9c7fc6c2f336166272))
+* darken struckout text ([5388763](https://github.com/uncenter/ctp-mdBook/commit/5388763d108a72e1f0bd99656d7c88439fe9243a))
+* deprecate rust plugin & update sass files ([#112](https://github.com/uncenter/ctp-mdBook/issues/112)) ([f705cb5](https://github.com/uncenter/ctp-mdBook/commit/f705cb5a0ca7932ea88480b1793b915f47b52146))
+* style `.warning` class ([#91](https://github.com/uncenter/ctp-mdBook/issues/91)) ([ff9851d](https://github.com/uncenter/ctp-mdBook/commit/ff9851d395934d8b5a084b7290d992b127169d51))
+* support mdbook version `0.4.35` ([55e8722](https://github.com/uncenter/ctp-mdBook/commit/55e872267de2c63e91659c6be5eac1be4fc34540))
+* switch to clap v4 ([a1ddb9a](https://github.com/uncenter/ctp-mdBook/commit/a1ddb9a11b6a5e83b75dbfeebe776ad7658ac9eb))
+
+
+### Bug Fixes
+
+* **admonish:** prefix `admonish-` to class names ([#76](https://github.com/uncenter/ctp-mdBook/issues/76)) ([ba711b6](https://github.com/uncenter/ctp-mdBook/commit/ba711b6ceb67f9d4e352cafc4a11d8a28d0b4980))
+* change inline codeblocks from `peach` to `text` ([45da623](https://github.com/uncenter/ctp-mdBook/commit/45da62372ca500102ec542cebc39ec999f196ff2))
+* clap typecasting panic ([1193c91](https://github.com/uncenter/ctp-mdBook/commit/1193c91b092da7f7496fb78431045733814789f0))
+* colours in `diff` codeblock ([#67](https://github.com/uncenter/ctp-mdBook/issues/67)) ([a3b3f77](https://github.com/uncenter/ctp-mdBook/commit/a3b3f7726c85cc815279f62fbd096d7249429866))
+* highlightjs syntax highlighting ([#119](https://github.com/uncenter/ctp-mdBook/issues/119)) ([5a04755](https://github.com/uncenter/ctp-mdBook/commit/5a04755004cf75aff86f911e684b915c9505f76f))
+* increase contrast on icons hover ([#140](https://github.com/uncenter/ctp-mdBook/issues/140)) ([7edf128](https://github.com/uncenter/ctp-mdBook/commit/7edf128b50f9a256d3a0ec37defad3ff755369fa))
+* preserve links as `blue` inside inline codeblocks ([45da623](https://github.com/uncenter/ctp-mdBook/commit/45da62372ca500102ec542cebc39ec999f196ff2))
+* properly theme `hr` element ([#122](https://github.com/uncenter/ctp-mdBook/issues/122)) ([90d4392](https://github.com/uncenter/ctp-mdBook/commit/90d4392a45244cde7f0c846c5c75cfa91e0349ea))
+* reduce harshness of hover highlight ([ac84329](https://github.com/uncenter/ctp-mdBook/commit/ac84329f1e251055f007a93cdff4caab732680fb))
+* theme tooltip when copying from codeblock ([ac84329](https://github.com/uncenter/ctp-mdBook/commit/ac84329f1e251055f007a93cdff4caab732680fb))
+
+
+### Code Refactoring
+
+* add catppuccin themes into `index.hbs` ([7784563](https://github.com/uncenter/ctp-mdBook/commit/77845636b4008ea1d17b425698e4c445c2e67de1))
+* add symlinks back ([0aad6a2](https://github.com/uncenter/ctp-mdBook/commit/0aad6a2f148faf7f8d112a53c0529f8a80a4de80))
+* **cli:** revert `.subcommand_required(true)` ([0df59a7](https://github.com/uncenter/ctp-mdBook/commit/0df59a79d93ff42c2d015a29ab48a6da66515be5))
+* consistently use "flavor" and "color" spellings, update sass syntax ([#138](https://github.com/uncenter/ctp-mdBook/issues/138)) ([fa0912e](https://github.com/uncenter/ctp-mdBook/commit/fa0912e7eea8863278d566e33b2dd45d9625fd40))
+* detect major versions in binary ([16e0fcf](https://github.com/uncenter/ctp-mdBook/commit/16e0fcf6b47e3cd409869b65918d34bfb8631f05))
+* **example:** remove symlinks to see if website ci passes ([291ceb7](https://github.com/uncenter/ctp-mdBook/commit/291ceb76911b0656544c1e4b4e0cdf6322a52835))
+* **example:** update mdbook-admonish & rework pages ci ([#116](https://github.com/uncenter/ctp-mdBook/issues/116)) ([db0d22c](https://github.com/uncenter/ctp-mdBook/commit/db0d22cc63d4d24cd23c6635de1ab55ef2f1d499))
+* ignore css in example directory ([ccc7de7](https://github.com/uncenter/ctp-mdBook/commit/ccc7de7d6c1fbb2a64da6d4cf516d30524b40afa))
+* remove 'index.hbs' symlink ([9f7e553](https://github.com/uncenter/ctp-mdBook/commit/9f7e553fb606ea7cd4f7da8f6809f2f63f85268e))
+* remove all rust ([#114](https://github.com/uncenter/ctp-mdBook/issues/114)) ([e1da91c](https://github.com/uncenter/ctp-mdBook/commit/e1da91c95e99cf5642a4aff020865a8ffa7ca481))
+* switch borders from `crust` to `surface0` ([#118](https://github.com/uncenter/ctp-mdBook/issues/118)) ([c315046](https://github.com/uncenter/ctp-mdBook/commit/c3150466e94cdd08e1bea5b92c18d0a7ecb84f28))
+* update help for '--force' flag ([ca3886a](https://github.com/uncenter/ctp-mdBook/commit/ca3886ae164bcd507ed07ceba001e10a6cbdc696))
+* use consistent casing in logs ([760b0b4](https://github.com/uncenter/ctp-mdBook/commit/760b0b4cd9451cc01523ec0ea7a4ad4e0ce36094))
+* **website:** set default to `latte` ([#141](https://github.com/uncenter/ctp-mdBook/issues/141)) ([e8a0135](https://github.com/uncenter/ctp-mdBook/commit/e8a013513c882e390f2694f74cede5da76a5cf83))
+* **website:** show example warning block ([4c12c0e](https://github.com/uncenter/ctp-mdBook/commit/4c12c0ed9c257ada2e81910b162eb575e8792d3a))
+* **website:** use mdbook-catppuccin v2.1.0 ([72297cc](https://github.com/uncenter/ctp-mdBook/commit/72297cc5ea1c22681cad07b87c10681ae4e12999))
+
+
+### Build system & distribution
+
+* **cargo:** reduce build-time dependencies ([8e9ea6e](https://github.com/uncenter/ctp-mdBook/commit/8e9ea6e2e9fd7b33fb62740eca4d7fb47aa3b38e))
+* **cargo:** update/unpin clap and mdbook ([b209ae7](https://github.com/uncenter/ctp-mdBook/commit/b209ae7ffa85e5cc3dba1dbf5e73b2560ad592c7))
+* **deps:** pin clap to `4.4.3` ([d9708d9](https://github.com/uncenter/ctp-mdBook/commit/d9708d98143a01d7ec42e2bc3e1adc7b786048a5))
+* **distribution:** remove `linux-musl`, `win-gnu`, and `win32-msvc` ([170419d](https://github.com/uncenter/ctp-mdBook/commit/170419dd6059a164b46ef60b85d9fc153603eb53))
+* don't make draft releases ([#110](https://github.com/uncenter/ctp-mdBook/issues/110)) ([80fefcd](https://github.com/uncenter/ctp-mdBook/commit/80fefcd3e51bf41ae1de3803e0963afb8d4b0b58))
+* **example:** bump version ([14c7aac](https://github.com/uncenter/ctp-mdBook/commit/14c7aac160d0db5bc4ea1a68f33c7125378e5b9e))
+* **example:** bump version ([3148609](https://github.com/uncenter/ctp-mdBook/commit/3148609f10f9bfa82d41e6e77635cfd65f1b68e7))
+* **nix:** add shell completions ([#89](https://github.com/uncenter/ctp-mdBook/issues/89)) ([097a72a](https://github.com/uncenter/ctp-mdBook/commit/097a72ab17272063772f88441c902511f36bd188))
+* **nix:** disable mdbook for now ([e446eb3](https://github.com/uncenter/ctp-mdBook/commit/e446eb35df1a10f91a7b0c1b9065e04cd732b492))
+* **nix:** drop macOS native dependencies ([#88](https://github.com/uncenter/ctp-mdBook/issues/88)) ([547ed85](https://github.com/uncenter/ctp-mdBook/commit/547ed8546b1870cb1e5747a2f2338aa33b3af522))
+* **nix:** fix darwin devShell ([#94](https://github.com/uncenter/ctp-mdBook/issues/94)) ([218116e](https://github.com/uncenter/ctp-mdBook/commit/218116e83688f2786af71eef5d11108f71950987))
+* **nix:** update nixpkgs in flake.lock ([ac73aa5](https://github.com/uncenter/ctp-mdBook/commit/ac73aa5bfc274464da3cf2f8b9f4b86853bdc4a1))
+* **palette:** don't build `node_modules` ([051a7ff](https://github.com/uncenter/ctp-mdBook/commit/051a7ff0a01f36e43750417f659328bc2f81e31d))
+* **website:** build on mdbook v0.4.35 ([97f7eb0](https://github.com/uncenter/ctp-mdBook/commit/97f7eb04e0defaf79cee9ddd44870fa31bc01780))
+* **website:** use mdbook-admonish v1.13.0 ([33eb09c](https://github.com/uncenter/ctp-mdBook/commit/33eb09c677719474e8726e6bf7278e1c9390cacc))
+
 ## [3.1.0](https://github.com/catppuccin/mdBook/compare/v3.0.3...v3.1.0) (2024-11-15)
 
 
